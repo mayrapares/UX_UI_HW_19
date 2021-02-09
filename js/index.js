@@ -1,15 +1,20 @@
 console.log ("Your index.js file is loaded correctly!");
-$("h3").hover(function(){
-    $(this).css("background-color", "orange");
-    }, function(){
-    $(this).css("background-color", "#ffffff");
-  });
 
-  $("#about").on("click",function()){
-    <form action="index.html"> <input type="submit"></input> </form>
+  $("#about").on("click", function pageRedirect() {
+    window.open('https://paresmayra.myportfolio.com/', '_blank'); 
   }
 
-  $("#work").on("click", function pageRedirect(){
-        window.location.href = "https://www.tutorialrepublic.com/";
+
+  $(".blockquote").on("click", function pageRedirect() {
+    window.open('https://paresmayra.myportfolio.com/', '_blank'); 
   }
 
+function pageRedirect(){}
+
+  $("#about").on('click', 'a', function(e){ 
+    e.preventDefault(); 
+    var url = $(this).attr('https://paresmayra.myportfolio.com/'); 
+    window.open(url, '_blank');
+});
+
+function(e){}

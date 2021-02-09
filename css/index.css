@@ -33,7 +33,7 @@ nav li {
     cursor: pointer;
 } 
 
-nav ul li:hover { color: whitesmoke; font-weight: bold; }
+nav ul li:hover { color: whitesmoke; font-weight: bold; cursor: pointer; }
 
 .logo {
     padding: 1%;
@@ -152,7 +152,7 @@ nav ul li:hover { color: whitesmoke; font-weight: bold; }
     font-weight: bold;
 }
 
-button {
+.main button {
     background-color: #DF8632;
     transition: 0.3s;
     padding: 15px;
@@ -162,7 +162,7 @@ button {
 
 }
 
-button:hover {
+.main button:hover {
     background-color: whitesmoke;
     color: black;
 }
