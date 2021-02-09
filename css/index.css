@@ -24,6 +24,7 @@ nav ul {
     margin-left: padding;
     font-size: 18px;
     color: #DF8632;
+    
 }
 
 nav li {
@@ -32,7 +33,7 @@ nav li {
     cursor: pointer;
 } 
 
-nav ul li:hover { color: whitesmoke; }
+nav ul li:hover { color: whitesmoke; font-weight: bold; }
 
 .logo {
     padding: 1%;
@@ -67,22 +68,22 @@ nav ul li:hover { color: whitesmoke; }
 }
 
 .content {
-    margin-left: 185px;
+    width: (100vw-185px);
     height: auto;
-    width: fit-content;
     background: #000000e7 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 13px;
-    padding: 25px;
+    padding: center;
+    margin-left: 185px;
 }
 
 .content h2 {
     color: #DF8632;
+    text-align: center;
+    font-weight: bold;
 }
 
 .skills {
-    width: fit-content;
-    height: auto;
     padding: 25px;
 }
 
@@ -100,11 +101,12 @@ nav ul li:hover { color: whitesmoke; }
     border: 1px solid #707070;
     border-radius: 13px;
     padding: 15px;
-    padding-top: 25px;
+    padding-top: 3px;
 }
 
 .grid h2 {
     color: #DF8632;
+    font-weight: bold;
 }
 
 .card-Columns {
@@ -112,19 +114,16 @@ nav ul li:hover { color: whitesmoke; }
     
 }
 
-.flexContainer {
-    flex-direction: row;
-}
-
 .card {
     background: #ffffff1e;
-    margin: 0 auto;
+  margin: auto;
     align-items: center;
     justify-content: center;
 }
 
 .card h4 {
     color: #DF8632;
+    font-weight: bold;
 }
 
 .cardContainer {
@@ -145,11 +144,12 @@ nav ul li:hover { color: whitesmoke; }
     border: 1px solid #707070;
     border-radius: 13px;
     text-align: center;
-    justify-content: space-between;
+   
 }
 
 .main h1 {
     color: #DF8632;
+    font-weight: bold;
 }
 
 button {
@@ -159,6 +159,7 @@ button {
     color: whitesmoke;
     font-size: 15px;
     border-radius: 4px;
+
 }
 
 button:hover {
@@ -166,19 +167,33 @@ button:hover {
     color: black;
 }
 
+.flexContainer {
+    display: flex;
+    padding: 15px;
+    text-align: center;
+  }
+  .flexContainer div {
+    width: 13%;
+    height: auto;
+    padding: 0 auto;
+  }
+
 .main img {
       float: right;
   }
   
 footer {
-    background-color: #ffffff1e;
-    width: 100vh;
+    background-color: #000000e7;
+    width: (100vh-185px);
+    margin-left: 185px;
     padding-left: 50%;
     padding-right: 50%;
     display: inline-block !important;
+    flex-direction: row;
 }  
 
 footer li {
+    flex-direction: row;
     display: inline-block !important;
     text-transform: lowercase;
     cursor: pointer;
