@@ -53,16 +53,16 @@
         <nav>
             <ul>
                 <li id="about" onclick="pageRedirect()">About</li>
-                <li>Skills</li>
-                <li id="work">Work</li>
+                <!-- <li>Skills</li> -->
+                <li id="work" onclick="pageRedirect()">Work</li>
                 <a href="PDF/resumefeb2021.pdf" target="PDF/resumefeb2021.pdf"> <li style="color: #DF8632;">Contact</li> </a>
             </ul>
         </nav>
         <div class="Icons">
             <ul style="cursor: pointer;">
-                <li class="inline-block" onclick="newTab()"><img src="images/linkedin.png" width="23%"></li>
-                <li class="inline-block" onclick="newPage()"><img src="images/behance.png" width="23%"></li>
-                <li class="inline-block" onclick="newWindow()"><img src="images/youtube.png" width="33%"></li>
+                <li class="inline-block" onclick="newTab()"><img src="images/linkedin.png" height="23px"></li>
+                <li class="inline-block" onclick="newPage()"><img src="images/behance.png" height="23px"></li>
+                <li class="inline-block" onclick="newWindow()"><img src="images/youtube.png" height="35px"></li>
             </ul>
         </div>
     </header>
@@ -70,12 +70,22 @@
 <!--HERO IMAGE-->
     <section class="heroImg">
         <div class="main">
+
+          <div class="flexContainer">
             <h1>hi, i'm mayra!</h1>
-            <img src="images/mayrag.png" width="13%">
+          </div>
+
+          <div class="flexContainer">
             <p>ui / ux engineer with a background in fine arts. i specialize in visual and interaction design, research and data analysis, and front-end development. i also have proficiency in JavaScript, HTML5, CSS, and JQuery. i have a leadership-driven work-ethic that is detail-oriented, creative, and adaptable, which makes me a valuable asset to any team. scroll down to see my work!
             </p>
-            <a href="PDF/resumefeb2021.pdf" target="PDF/resumefeb2021.pdf">
+            <img src="images/mayrag.png" width="13%">
+          </div>
+          
+          <div class="flexContainer">
+
+            <a href="PDF/resumefeb2021.pdf" target="PDF/resumefeb2021.pdf"> 
                 <button class="btn btn-lg" type="button">download resume</button> </a>
+              </div>
         </div>
     </section>
 
@@ -130,7 +140,7 @@
         <div class="card p-0 col-sm-12">
           <img src="images/ios.png" alt="MyFitnessPal" class="card-img-top">
           <div class="card-body">
-            <h4 class="card-title">myfitnesspal redesign</h4>
+            <h4 class="card-title">fitness app redesign</h4>
             <p class="card-text">based on user research, my team worked to redesign the myfitnesspal app in order to encourage regular use, while also leading to improved health for the user.</p>
           </div>
         </div>
@@ -188,7 +198,7 @@
 
 </section>
 
-<!--FOOTER-->
+<!-- FOOTER
   <footer>
         <ul>
             <li >About</li>
@@ -196,7 +206,7 @@
             <li>Work</li>
             <li >Contact</li>
         </ul>
-    </footer>
+    </footer> -->
 
 </body>
 
